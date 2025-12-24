@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.628);
+}
+
+.container{
+    border:2px solid white;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    gap:1rem;
+    justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.box-1{
+    background-color: aqua;
+    grid-column: 1/3;
+}
+
+.box-2{
+    background-color: rgb(61, 189, 129);
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.box-3{
+    background-color: rgb(19, 68, 131);
+    grid-column: 1/3;
+    grid-row:2/4;
+
+    align-self: center;
+    justify-self: center;
+
+
+    /* 
+        align-self and justify-self
+        ye cell ke ander kaam karta h .
+        jitna content h uske according.
+    */
+}
+
+.box-4{
+    background-color: rgba(44, 1, 57, 0.667);
+}
+
+.box-5{
+    background-color: rgba(5, 166, 215, 0.667);
+    grid-column: 1/4;
+}
+
+.box-6{
+    background-color: cadetblue;
+    grid-row: 5/7;
+}
+
+.box-7{
+    background-color: blueviolet;
+    grid-column:2/4;
+    grid-row:5/7;
+}
+
+.box-8{
+    background-color: rgb(93, 22, 88);
+    grid-column: 1/4;
+}
+
+.box-9{
+    background-color: rgb(206, 133, 168);
+    grid-column: 1/4;
+}
