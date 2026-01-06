@@ -1,0 +1,24 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    /* width: 900px; */
+    margin:auto;
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:1rem;
+    outline: 2px solid rgb(0, 0, 0);
+}
+
+.box{
+    height: 200px;
+}
