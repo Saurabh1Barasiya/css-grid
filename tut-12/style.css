@@ -1,0 +1,159 @@
+html,
+body {
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    border: 3px solid red;
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    margin-top: 1rem;
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.header {
+    background-color: red;
+}
+
+.menue {
+    background-color: seagreen;
+    grid-column: span 3;
+}
+
+.hero {
+    grid-row: span 3;
+    grid-column: span 4;
+    background-color: darkgoldenrod;
+}
+
+.main {
+    background-color: rgb(33, 108, 102);
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.image {
+    background-color: rgb(56, 90, 170);
+}
+
+.extra {
+    background-color: rgb(104, 15, 107);
+}
+
+.banner {
+    background-color: darkolivegreen;
+    grid-column: span 4;
+}
+
+
+/* for tablet device */
+
+@media (max-width:768px) {
+    .container {
+        background-color: darkblue;
+        width: 100%;
+    }
+
+    .empty {
+        display: none;
+    }
+
+    .header {
+        background-color: red;
+        grid-column: span 4;
+    }
+
+    .hero {
+        grid-row: 2 / 4;
+    }
+
+    .main {
+        background-color: rgb(33, 108, 102);
+        grid-column: 2/5;
+    }
+
+    .menue {
+        grid-row: 4 / 8;
+        grid-column: 1/2;
+    }
+
+    .banner {
+        grid-row: 6/7;
+        grid-column: 2/-1;
+    }
+
+
+    .image {
+        background-color: rgb(56, 90, 170);
+        grid-row: 7/8;
+    }
+
+    .extra {
+        background-color: rgb(104, 15, 107);
+        grid-row: 7/8;
+        grid-column: 3/-1;
+    }
+}
+
+
+
+/* for mobile device */
+
+@media (max-width:400px) {
+
+
+
+
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+
+    /* .header {
+        grid-column: span 1;
+    }
+
+    .menue {
+        grid-column: span 1;
+    }
+
+    .hero {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .main {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .banner {
+        grid-column: span 1;
+    } */
+
+
+    .header,
+    .menue,
+    .hero,
+    .main,
+    .banner,
+    .image,
+    .extra {
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    .empty {
+        display: none;
+    }
+}
